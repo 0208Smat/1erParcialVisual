@@ -153,3 +153,5 @@ El Controller recibe `IClienteService` por constructor y no crea manualmente nin
 El archivo `EmpresaApiVB.http` contiene solicitudes para probar las cinco operaciones CRUD desde Visual Studio.
 
 También se puede utilizar Swagger para ejecutar las solicitudes directamente desde el navegador.
+
+Así también, se adjuntan los requests y responses de los servicios como evidencias de pruebas en el archivo: EmpresaApiVB-documentation.html
