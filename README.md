@@ -42,7 +42,7 @@ EmpresaApiVB/
 └── README.md
 ```
 
-El flujo solicitado por el examen es:
+El flujo es:
 
 ```text
 Controller
@@ -90,7 +90,7 @@ Server=.\SQLEXPRESS;Database=EmpresaDB;Trusted_Connection=True;TrustServerCertif
 
 ## 3. Abrir en Visual Studio
 
-Abrir `EmpresaApiVB.sln` en Visual Studio 18.9.0.
+Abrir `EmpresaApiVB.sln` en Visual Studio 18.9.0 o superior.
 
 Restaurar los paquetes NuGet y ejecutar el proyecto.
 
@@ -153,7 +153,3 @@ El Controller recibe `IClienteService` por constructor y no crea manualmente nin
 El archivo `EmpresaApiVB.http` contiene solicitudes para probar las cinco operaciones CRUD desde Visual Studio.
 
 También se puede utilizar Swagger para ejecutar las solicitudes directamente desde el navegador.
-
-## 7. Relación con la consigna
-
-La solución separa las responsabilidades en `Controllers`, `Services`, `Repositories`, `Models` y `Data`, utiliza Entity Framework Core para la persistencia y SQL Server como base de datos.
