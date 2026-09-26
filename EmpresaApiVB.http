@@ -1,0 +1,34 @@
+@EmpresaApiVB_HostAddress = http://localhost:5180
+
+### Obtener todos
+GET {{EmpresaApiVB_HostAddress}}/api/clientes
+Accept: application/json
+
+### Obtener por ID
+GET {{EmpresaApiVB_HostAddress}}/api/clientes/1
+Accept: application/json
+
+### Crear
+POST {{EmpresaApiVB_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Carlos",
+  "apellido": "Benitez",
+  "email": "carlos.benitez@email.com",
+  "telefono": "0983123456"
+}
+
+### Modificar
+PUT {{EmpresaApiVB_HostAddress}}/api/clientes/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Carlos",
+  "apellido": "Perez",
+  "email": "juan.carlos@email.com",
+  "telefono": "0981999999"
+}
+
+### Eliminar
+DELETE {{EmpresaApiVB_HostAddress}}/api/clientes/1
